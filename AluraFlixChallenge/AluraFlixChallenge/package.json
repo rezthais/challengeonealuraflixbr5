@@ -1,0 +1,41 @@
+{
+  "name": "aluraflix",
+  "private": true,
+  "version": "0.0.0",
+  "type": "commonjs",
+  "homepage": "https://iallyfabiane.github.io/AluraFlix/",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"json-server --watch db.json\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "concurrently \"json-server --watch db.json\" \"node server.js\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.0",
+    "cors": "^2.8.5",
+    "http": "^0.0.1-security",
+    "http-proxy-middleware": "^2.0.6",
+    "react": "^18.2.0",
+    "react-alice-carousel": "^2.7.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0",
+    "styled-components": "^5.3.10"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "concurrently": "^8.0.1",
+    "express": "^4.18.2",
+    "gh-pages": "^5.0.0",
+    "json-server": "^0.17.3",
+    "nodemon": "^2.0.22",
+    "vite": "^4.3.4",
+    "vite-express": "^0.6.0",
+    "vite-plugin-server": "^0.1.2"
+  }
+}
